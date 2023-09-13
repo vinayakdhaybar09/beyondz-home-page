@@ -54,6 +54,9 @@ const Header = () => {
       setOpenSubMenu(submenu);
     }
   };
+  const handleCloseMenu = () => {
+    setOpenSubMenu(null);
+  };
 
   return (
     <>
@@ -70,7 +73,7 @@ const Header = () => {
             <Link href="/" className={styles.linkTag}>
               Home
             </Link>
-            <Link href="/" className={styles.linkTag}>
+            <Link href="/about" className={styles.linkTag}>
               About
             </Link>
             <Popover placement="bottom" content={serviceContent}>
@@ -129,7 +132,7 @@ const Header = () => {
             </Link>
           </div>
           <div className={styles.mobileMenuDiv}>
-            <Link href={"/"} className={styles.mobileMenu}>
+            <Link href={"/about"} className={styles.mobileMenu}>
               About
             </Link>
           </div>

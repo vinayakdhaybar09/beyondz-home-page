@@ -5,75 +5,19 @@ import styles from "./ourTeam.module.css";
 import Team1 from "../../../../public/assets/team1.png";
 import Image from "next/image";
 import { Modal } from "antd";
-
-const OurTeamData = [
-  {
-    id: 1,
-    imgLink: Team1,
-    name: "Pradeep Kumar",
-    post: "CHIEF EXECUTIVE",
-    description:
-      "Pradeep Kumar has about three decades of professional experience against his name.  With multi-location and multi-cultural exposure paired with a Master Black Belt in Six Sigma & Lean, Pradeep’s core expertise comes from over a decade of specialization in a large multinational manufacturing company. He is a Certified MBB in Lean and Six Sigma by SBTI, Texas and trained by Mckinsey Consultants as a Lean Practitioner in Rock Hill-USA. He currently works with large multinational companies, helping them drive Operational Excellence and implement lean strategies. Pradeep also guides senior leadership towards excellence in execution. He has trained candidates in Lean & Six Sigma in India, China, Japan, Thailand, Europe, Middle East, Sri Lanka and the USA",
-  },
-  {
-    id: 2,
-    imgLink: Team1,
-    name: "Pradeep Kumar",
-    post: "CHIEF EXECUTIVE",
-    description:
-      "Pradeep Kumar has about three decades of professional experience against his name.  With multi-location and multi-cultural exposure paired with a Master Black Belt in Six Sigma & Lean, Pradeep’s core expertise comes from over a decade of specialization in a large multinational manufacturing company. He is a Certified MBB in Lean and Six Sigma by SBTI, Texas and trained by Mckinsey Consultants as a Lean Practitioner in Rock Hill-USA. He currently works with large multinational companies, helping them drive Operational Excellence and implement lean strategies. Pradeep also guides senior leadership towards excellence in execution. He has trained candidates in Lean & Six Sigma in India, China, Japan, Thailand, Europe, Middle East, Sri Lanka and the USA",
-  },
-  {
-    id: 3,
-    imgLink: Team1,
-    name: "Pradeep Kumar",
-    post: "CHIEF EXECUTIVE",
-    description:
-      "Pradeep Kumar has about three decades of professional experience against his name.  With multi-location and multi-cultural exposure paired with a Master Black Belt in Six Sigma & Lean, Pradeep’s core expertise comes from over a decade of specialization in a large multinational manufacturing company. He is a Certified MBB in Lean and Six Sigma by SBTI, Texas and trained by Mckinsey Consultants as a Lean Practitioner in Rock Hill-USA. He currently works with large multinational companies, helping them drive Operational Excellence and implement lean strategies. Pradeep also guides senior leadership towards excellence in execution. He has trained candidates in Lean & Six Sigma in India, China, Japan, Thailand, Europe, Middle East, Sri Lanka and the USA",
-  },
-  {
-    id: 4,
-    imgLink: Team1,
-    name: "Pradeep Kumar",
-    post: "CHIEF EXECUTIVE",
-    description:
-      "Pradeep Kumar has about three decades of professional experience against his name.  With multi-location and multi-cultural exposure paired with a Master Black Belt in Six Sigma & Lean, Pradeep’s core expertise comes from over a decade of specialization in a large multinational manufacturing company. He is a Certified MBB in Lean and Six Sigma by SBTI, Texas and trained by Mckinsey Consultants as a Lean Practitioner in Rock Hill-USA. He currently works with large multinational companies, helping them drive Operational Excellence and implement lean strategies. Pradeep also guides senior leadership towards excellence in execution. He has trained candidates in Lean & Six Sigma in India, China, Japan, Thailand, Europe, Middle East, Sri Lanka and the USA",
-  },
-  {
-    id: 5,
-    imgLink: Team1,
-    name: "Pradeep Kumar",
-    post: "CHIEF EXECUTIVE",
-    description:
-      "Pradeep Kumar has about three decades of professional experience against his name.  With multi-location and multi-cultural exposure paired with a Master Black Belt in Six Sigma & Lean, Pradeep’s core expertise comes from over a decade of specialization in a large multinational manufacturing company. He is a Certified MBB in Lean and Six Sigma by SBTI, Texas and trained by Mckinsey Consultants as a Lean Practitioner in Rock Hill-USA. He currently works with large multinational companies, helping them drive Operational Excellence and implement lean strategies. Pradeep also guides senior leadership towards excellence in execution. He has trained candidates in Lean & Six Sigma in India, China, Japan, Thailand, Europe, Middle East, Sri Lanka and the USA",
-  },
-  {
-    id: 6,
-    imgLink: Team1,
-    name: "Pradeep Kumar",
-    post: "CHIEF EXECUTIVE",
-    description:
-      "Pradeep Kumar has about three decades of professional experience against his name.  With multi-location and multi-cultural exposure paired with a Master Black Belt in Six Sigma & Lean, Pradeep’s core expertise comes from over a decade of specialization in a large multinational manufacturing company. He is a Certified MBB in Lean and Six Sigma by SBTI, Texas and trained by Mckinsey Consultants as a Lean Practitioner in Rock Hill-USA. He currently works with large multinational companies, helping them drive Operational Excellence and implement lean strategies. Pradeep also guides senior leadership towards excellence in execution. He has trained candidates in Lean & Six Sigma in India, China, Japan, Thailand, Europe, Middle East, Sri Lanka and the USA",
-  },
-  {
-    id: 7,
-    imgLink: Team1,
-    name: "Pradeep Kumar",
-    post: "CHIEF EXECUTIVE",
-    description:
-      "Pradeep Kumar has about three decades of professional experience against his name.  With multi-location and multi-cultural exposure paired with a Master Black Belt in Six Sigma & Lean, Pradeep’s core expertise comes from over a decade of specialization in a large multinational manufacturing company. He is a Certified MBB in Lean and Six Sigma by SBTI, Texas and trained by Mckinsey Consultants as a Lean Practitioner in Rock Hill-USA. He currently works with large multinational companies, helping them drive Operational Excellence and implement lean strategies. Pradeep also guides senior leadership towards excellence in execution. He has trained candidates in Lean & Six Sigma in India, China, Japan, Thailand, Europe, Middle East, Sri Lanka and the USA",
-  },
-];
+import { OurTeamData } from "../../../utils/projectData";
 
 const OurTeamCard = ({ data }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   return (
     <div className={styles.ourTeamCard}>
-      <Image
-        src={data.imgLink}
-        alt="team profile photo"
-        className={styles.ourTeamCardImg}
-      />
+      <div className={styles.ourTeamCardImgDiv}>
+        <Image
+          src={data.imgLink}
+          alt="team profile photo"
+          className={styles.ourTeamCardImg}
+        />
+      </div>
       <p className={styles.ourTeamCardName}>{data.name}</p>
       <p className={styles.ourTeamCardPost}>{data.post}</p>
       <p className={styles.ourTeamCardDesc}>
@@ -92,11 +36,13 @@ const OurTeamCard = ({ data }) => {
         onCancel={() => setIsModalOpen(false)}
       >
         <div className={styles.ourTeamCard}>
-          <Image
-            src={data.imgLink}
-            alt="team profile photo"
-            className={styles.ourTeamCardImg}
-          />
+          <div className={styles.ourTeamCardImgDiv}>
+            <Image
+              src={data.imgLink}
+              alt="team profile photo"
+              className={styles.ourTeamCardImg}
+            />
+          </div>
           <p className={styles.ourTeamCardName}>{data.name}</p>
           <p className={styles.ourTeamCardPost}>{data.post}</p>
           <p className={styles.ourTeamCardDesc}>{data.description}</p>

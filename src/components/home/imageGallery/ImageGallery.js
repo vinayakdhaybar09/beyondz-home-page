@@ -10,18 +10,18 @@ const ImageGallery = () => {
   const [currentImage, setCurrentImage] = useState(0);
   const [isViewerOpen, setIsViewerOpen] = useState(false);
   const images = [
-    "/assets/hero1.png",
-    "/assets/hero2.png",
-    "/assets/hero3.png",
-    "/assets/hero4.jpg",
-    "/assets/hero1.png",
-    "/assets/hero2.png",
-    "/assets/hero3.png",
-    "/assets/hero4.jpg",
-    "/assets/hero1.png",
-    "/assets/hero2.png",
-    "/assets/hero3.png",
-    "/assets/hero4.jpg",
+    "/assets/gallery1.jpeg",
+    "/assets/gallery2.jpg",
+    "/assets/gallery3.jpg",
+    "/assets/gallery4.jpg",
+    "/assets/gallery5.jpg",
+    "/assets/gallery6.jpg",
+    "/assets/gallery7.jpg",
+    "/assets/gallery8.jpg",
+    "/assets/gallery9.jpg",
+    "/assets/gallery10.jpg",
+    "/assets/gallery11.jpg",
+    "/assets/gallery12.jpg",
   ];
 
   const openImageViewer = useCallback((index) => {

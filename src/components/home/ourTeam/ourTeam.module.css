@@ -30,7 +30,13 @@
   width: 100%;
 }
 
+.ourTeamCardImgDiv {
+  width: 200px;
+}
+
 .ourTeamCardImg {
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
   transition: transform 0.5s;
 }

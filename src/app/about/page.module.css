@@ -1,0 +1,49 @@
+.aboutContainer {
+  padding: 5% 10%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+}
+
+.aboutImgDiv {
+  width: 100%;
+}
+
+.aboutImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.aboutTitle {
+  text-align: center;
+  color: #e0600f;
+}
+
+.aboutInfo {
+  padding: 0 5%;
+  font-size: 18px;
+  text-align: left;
+  line-height: 26px;
+}
+
+.aboutInfo a {
+  text-decoration: none;
+  color: #0170b9;
+}
+
+.aboutProjectImgDiv {
+  width: 80%;
+}
+
+.aboutProjetImg {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 1200px) {
+  .aboutContainer {
+    padding: 10% 5%;
+  }
+}

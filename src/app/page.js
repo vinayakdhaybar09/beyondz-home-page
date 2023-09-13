@@ -24,7 +24,6 @@ export default function Home() {
       <Partners />
       <Testimonials />
       <Enquiry />
-      <Footer />
     </main>
   );
 }
