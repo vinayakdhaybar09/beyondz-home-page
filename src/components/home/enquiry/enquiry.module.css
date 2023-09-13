@@ -1,0 +1,72 @@
+.enquiryContainer {
+  padding: 5% 10%;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+
+.enquiryImgDiv {
+  width: 48%;
+}
+
+.enquiryContainerImg {
+  width: 100%;
+  height: auto;
+}
+
+.enquiryFormDiv {
+  width: 48%;
+}
+
+.enquiryFormTitle {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  color: #282f31;
+}
+
+.enquiryFormLabel {
+  color: #7a7a7a;
+}
+
+.enquiryFormLabel span {
+  color: red;
+}
+
+.enquiryFormInput {
+  padding: 10px;
+  border: 1px solid #7a7a7a;
+  outline: none;
+  width: 100%;
+  margin-bottom: 14px;
+  margin-top: 4px;
+}
+
+.enquirySendBtn {
+  background-color: #f37021;
+  color: #fff;
+  border: none;
+  width: 100%;
+  padding: 14px;
+  cursor: pointer;
+}
+
+@media (max-width: 1120px) {
+  .enquiryContainer {
+    padding: 10% 5%;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .enquiryImgDiv {
+    width: 100%;
+  }
+
+  .enquiryFormDiv {
+    width: 100%;
+  }
+  .enquiryFormTitle {
+    margin-bottom: 10px;
+  }
+}

@@ -1,0 +1,108 @@
+.heroCarouselContainer {
+  padding: 1% 10%;
+}
+
+.carouselDiv {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+}
+
+.carouselInfoDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(12, 12, 12, 0.47);
+  padding: 30px 0px;
+  width: 80%;
+  gap: 20px;
+}
+
+.carouselTitle {
+  color: #fff;
+  font-weight: 300;
+  font-size: 50px;
+  text-align: center;
+}
+
+.carouselSubTitle {
+  font-weight: 400;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+}
+
+.carouselHeroBtnDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.carouselServiceBtn,
+.carouselContactBtn {
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  border-radius: 8px;
+  text-decoration: none;
+  width: 14vw;
+  font-size: 18px;
+  background: linear-gradient(180deg, #ff9500 0%, #ff5e3a 100%);
+}
+
+.carouselContactBtn {
+  background: #000;
+}
+
+.carouselServiceBtn:hover {
+  background: #ff9500;
+  color: #fff;
+}
+
+.carouselContactBtn:hover {
+  background: #fff;
+  color: #000;
+}
+
+@media (max-width: 1120px) {
+  .heroCarouselContainer {
+    padding: 5% 5%;
+  }
+  .carouselDiv {
+    height: 300px;
+  }
+
+  .carouselInfoDiv {
+    background: none;
+  }
+
+  .carouselServiceBtn,
+  .carouselContactBtn {
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 8px;
+    text-decoration: none;
+    width: 40vw;
+    font-size: 18px;
+    background: linear-gradient(180deg, #ff9500 0%, #ff5e3a 100%);
+  }
+
+  .carouselContactBtn {
+    background: #000;
+  }
+
+  .carouselTitleDiv {
+    background: rgba(12, 12, 12, 0.47);
+  }
+  .carouselTitle {
+    font-size: 24px;
+  }
+  .carouselSubTitle {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+}

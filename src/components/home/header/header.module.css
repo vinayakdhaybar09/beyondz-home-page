@@ -1,0 +1,162 @@
+.headerContainer {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  padding: 0 36px;
+  border-bottom: 2px solid #e0600f;
+
+  /*  */
+
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 100;
+  transition: background-color 0.3s;
+}
+
+.logoImgDiv {
+  width: 20vw;
+}
+
+.logoImg {
+  width: 100%;
+  height: 100%;
+}
+
+.rightHeaderSec {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.headerLinks {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+}
+
+.linkTag {
+  color: #000;
+  text-decoration: none;
+  font-size: 15px;
+  transition: transform 0.5s;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.linkTag:hover {
+  color: #e0600f;
+  transform: scale(1.2);
+}
+
+/* .linkTagDiv {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+} */
+/* 
+.linkTagDiv:hover{
+    color: #E0600F;
+    transform: scale(1.2);
+} */
+
+.mediaDiv {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.mediaTag {
+  color: #e0600f;
+  font-size: 26px;
+  display: flex;
+  align-items: center;
+}
+
+.menuBtnDiv {
+  display: none;
+}
+
+.mobileMenuContainer {
+  margin-top: 10px;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #f9f9f9;
+}
+
+.mobileMenuDiv {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mobileMenu {
+  text-decoration: none;
+  color: #060606;
+  font-size: 14px;
+  width: 100%;
+}
+
+.subMenuContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.subMenuDiv {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.mobileSubMenuIcon {
+  color: gray;
+}
+
+.popoverDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 140px;
+}
+
+.popoverSubMenu {
+  color: #060606;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.popoverSubMenu:hover {
+  color: #e0600f;
+}
+
+@media (max-width: 1200px) {
+  .headerContainer {
+    padding: 0 20px;
+    height: 10vh;
+    position: unset;
+  }
+
+  .rightHeaderSec {
+    display: none;
+  }
+  .menuBtnDiv {
+    display: block;
+  }
+
+  .menuBtn {
+    font-size: 24px;
+    color: #e0600f;
+  }
+
+  .logoImgDiv {
+    width: 40vw;
+  }
+}

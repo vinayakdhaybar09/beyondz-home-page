@@ -1,0 +1,85 @@
+.ourTeamContainer {
+  padding: 5% 10%;
+  background-color: #58595b;
+}
+
+.ourTeamContainerTitle {
+  color: #f37021;
+  text-align: center;
+  margin-bottom: 3%;
+}
+
+.ourTeamFlexDiv {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 8vh;
+}
+
+.ourTeamCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  background-color: #fff;
+  padding: 2%;
+}
+
+.ourTeamCard:last-child {
+  width: 100%;
+}
+
+.ourTeamCardImg {
+  border-radius: 50%;
+  transition: transform 0.5s;
+}
+
+.ourTeamCardImg:hover {
+  transform: scale(1.1);
+}
+
+.ourTeamCardName {
+  font-size: 26px;
+  color: #f37021;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.ourTeamCardPost {
+  color: #58595b;
+  font-weight: 600;
+  text-align: center;
+}
+
+.ourTeamCardDesc {
+  color: #4b4f58;
+  text-align: center;
+  margin-top: 1vh;
+}
+
+.ourTeamCardBtn {
+  color: #fff;
+  background-color: #f37021;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+@media (max-width: 1120px) {
+  .ourTeamContainer {
+    padding: 10% 5%;
+  }
+  .ourTeamContainerTitle {
+    font-weight: 400;
+  }
+  .ourTeamFlexDiv {
+    flex-direction: column;
+  }
+
+  .ourTeamCard {
+    width: 100%;
+    padding: 5%;
+  }
+}
